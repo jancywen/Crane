@@ -8,6 +8,16 @@
 
 import SwiftUI
 
+
+struct FilterView: View {
+    @Binding var showFavorited: Bool
+    var body: some View {
+        Toggle(isOn: $showFavorited) {
+            Text("Change filter")
+        }
+    }
+}
+
 struct ProductsView: View {
     
     let products: [Product] = [Product(id: 1, title: "product-1", isFavorited: false),
@@ -18,8 +28,10 @@ struct ProductsView: View {
     
     var body: some View {
         List {
-            Button(action: {self.showFavorited.toggle()},
-                   label: {Text("Change filter")})
+//            Button(action: {self.showFavorited.toggle()},
+//                   label: {Text("Change filter")})
+            
+            FilterView(showFavorited: $showFavorited)
             
             ForEach(products) { product in
                 if !self.showFavorited || product.isFavorited {

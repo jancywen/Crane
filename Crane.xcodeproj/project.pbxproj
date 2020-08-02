@@ -17,6 +17,14 @@
 		E459188D24CFF60300953D4A /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459188C24CFF60300953D4A /* GithubService.swift */; };
 		E459188F24CFF8F300953D4A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459188E24CFF8F300953D4A /* SearchView.swift */; };
 		E459189124D002F100953D4A /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459189024D002F100953D4A /* ProductsView.swift */; };
+		E884790324D5514100187E05 /* PodcastPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790224D5514100187E05 /* PodcastPlayer.swift */; };
+		E884790524D551C800187E05 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790424D551C800187E05 /* EpisodesView.swift */; };
+		E884790824D557AD00187E05 /* SettingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790724D557AD00187E05 /* SettingStore.swift */; };
+		E884790A24D55C9B00187E05 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790924D55C9B00187E05 /* SettingView.swift */; };
+		E884790D24D65D6800187E05 /* PersonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790C24D65D6800187E05 /* PersonStore.swift */; };
+		E884790F24D65E5200187E05 /* PersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790E24D65E5200187E05 /* PersonsView.swift */; };
+		E884791124D65FB000187E05 /* EditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884791024D65FB000187E05 /* EditingView.swift */; };
+		E884791424D66CB600187E05 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884791324D66CB600187E05 /* GestureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,14 @@
 		E459188C24CFF60300953D4A /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
 		E459188E24CFF8F300953D4A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E459189024D002F100953D4A /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		E884790224D5514100187E05 /* PodcastPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPlayer.swift; sourceTree = "<group>"; };
+		E884790424D551C800187E05 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
+		E884790724D557AD00187E05 /* SettingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStore.swift; sourceTree = "<group>"; };
+		E884790924D55C9B00187E05 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		E884790C24D65D6800187E05 /* PersonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStore.swift; sourceTree = "<group>"; };
+		E884790E24D65E5200187E05 /* PersonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsView.swift; sourceTree = "<group>"; };
+		E884791024D65FB000187E05 /* EditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingView.swift; sourceTree = "<group>"; };
+		E884791324D66CB600187E05 /* GestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +80,14 @@
 		E459187224CFF48100953D4A /* Crane */ = {
 			isa = PBXGroup;
 			children = (
+				E884791224D66CAA00187E05 /* Gesture */,
+				E884790B24D65D1A00187E05 /* Employment */,
+				E884790624D5577E00187E05 /* Form */,
+				E884790124D550E100187E05 /* Property Wrapper */,
 				E459188724CFF54E00953D4A /* search */,
 				E459187324CFF48100953D4A /* AppDelegate.swift */,
 				E459187524CFF48100953D4A /* SceneDelegate.swift */,
 				E459187724CFF48100953D4A /* ContentView.swift */,
-				E459189024D002F100953D4A /* ProductsView.swift */,
 				E459187924CFF48600953D4A /* Assets.xcassets */,
 				E459187E24CFF48600953D4A /* LaunchScreen.storyboard */,
 				E459188124CFF48600953D4A /* Info.plist */,
@@ -93,6 +112,43 @@
 				E459188E24CFF8F300953D4A /* SearchView.swift */,
 			);
 			path = search;
+			sourceTree = "<group>";
+		};
+		E884790124D550E100187E05 /* Property Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				E459189024D002F100953D4A /* ProductsView.swift */,
+				E884790224D5514100187E05 /* PodcastPlayer.swift */,
+				E884790424D551C800187E05 /* EpisodesView.swift */,
+			);
+			path = "Property Wrapper";
+			sourceTree = "<group>";
+		};
+		E884790624D5577E00187E05 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				E884790724D557AD00187E05 /* SettingStore.swift */,
+				E884790924D55C9B00187E05 /* SettingView.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		E884790B24D65D1A00187E05 /* Employment */ = {
+			isa = PBXGroup;
+			children = (
+				E884790C24D65D6800187E05 /* PersonStore.swift */,
+				E884790E24D65E5200187E05 /* PersonsView.swift */,
+				E884791024D65FB000187E05 /* EditingView.swift */,
+			);
+			path = Employment;
+			sourceTree = "<group>";
+		};
+		E884791224D66CAA00187E05 /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				E884791324D66CB600187E05 /* GestureView.swift */,
+			);
+			path = Gesture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,13 +222,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E884790D24D65D6800187E05 /* PersonStore.swift in Sources */,
+				E884790524D551C800187E05 /* EpisodesView.swift in Sources */,
+				E884790F24D65E5200187E05 /* PersonsView.swift in Sources */,
+				E884791124D65FB000187E05 /* EditingView.swift in Sources */,
 				E459189124D002F100953D4A /* ProductsView.swift in Sources */,
+				E884790324D5514100187E05 /* PodcastPlayer.swift in Sources */,
 				E459187424CFF48100953D4A /* AppDelegate.swift in Sources */,
 				E459188B24CFF59500953D4A /* ReposStore.swift in Sources */,
 				E459187624CFF48100953D4A /* SceneDelegate.swift in Sources */,
+				E884790824D557AD00187E05 /* SettingStore.swift in Sources */,
 				E459188D24CFF60300953D4A /* GithubService.swift in Sources */,
 				E459188F24CFF8F300953D4A /* SearchView.swift in Sources */,
 				E459187824CFF48100953D4A /* ContentView.swift in Sources */,
+				E884790A24D55C9B00187E05 /* SettingView.swift in Sources */,
+				E884791424D66CB600187E05 /* GestureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
