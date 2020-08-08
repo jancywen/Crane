@@ -17,6 +17,8 @@
 		E459188D24CFF60300953D4A /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459188C24CFF60300953D4A /* GithubService.swift */; };
 		E459188F24CFF8F300953D4A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459188E24CFF8F300953D4A /* SearchView.swift */; };
 		E459189124D002F100953D4A /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459189024D002F100953D4A /* ProductsView.swift */; };
+		E463C0E724DE86610006CB90 /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463C0E624DE86610006CB90 /* Master.swift */; };
+		E463C0EA24DE91780006CB90 /* PopoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463C0E924DE91780006CB90 /* PopoutView.swift */; };
 		E884790324D5514100187E05 /* PodcastPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790224D5514100187E05 /* PodcastPlayer.swift */; };
 		E884790524D551C800187E05 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790424D551C800187E05 /* EpisodesView.swift */; };
 		E884790824D557AD00187E05 /* SettingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790724D557AD00187E05 /* SettingStore.swift */; };
@@ -40,6 +42,8 @@
 		E459188C24CFF60300953D4A /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
 		E459188E24CFF8F300953D4A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E459189024D002F100953D4A /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		E463C0E624DE86610006CB90 /* Master.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
+		E463C0E924DE91780006CB90 /* PopoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoutView.swift; sourceTree = "<group>"; };
 		E884790224D5514100187E05 /* PodcastPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPlayer.swift; sourceTree = "<group>"; };
 		E884790424D551C800187E05 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		E884790724D557AD00187E05 /* SettingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStore.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		E459187224CFF48100953D4A /* Crane */ = {
 			isa = PBXGroup;
 			children = (
+				E463C0E824DE91680006CB90 /* Popout */,
 				E884791224D66CAA00187E05 /* Gesture */,
 				E884790B24D65D1A00187E05 /* Employment */,
 				E884790624D5577E00187E05 /* Form */,
@@ -88,6 +93,7 @@
 				E459187324CFF48100953D4A /* AppDelegate.swift */,
 				E459187524CFF48100953D4A /* SceneDelegate.swift */,
 				E459187724CFF48100953D4A /* ContentView.swift */,
+				E463C0E624DE86610006CB90 /* Master.swift */,
 				E459187924CFF48600953D4A /* Assets.xcassets */,
 				E459187E24CFF48600953D4A /* LaunchScreen.storyboard */,
 				E459188124CFF48600953D4A /* Info.plist */,
@@ -112,6 +118,14 @@
 				E459188E24CFF8F300953D4A /* SearchView.swift */,
 			);
 			path = search;
+			sourceTree = "<group>";
+		};
+		E463C0E824DE91680006CB90 /* Popout */ = {
+			isa = PBXGroup;
+			children = (
+				E463C0E924DE91780006CB90 /* PopoutView.swift */,
+			);
+			path = Popout;
 			sourceTree = "<group>";
 		};
 		E884790124D550E100187E05 /* Property Wrapper */ = {
@@ -225,7 +239,9 @@
 				E884790D24D65D6800187E05 /* PersonStore.swift in Sources */,
 				E884790524D551C800187E05 /* EpisodesView.swift in Sources */,
 				E884790F24D65E5200187E05 /* PersonsView.swift in Sources */,
+				E463C0E724DE86610006CB90 /* Master.swift in Sources */,
 				E884791124D65FB000187E05 /* EditingView.swift in Sources */,
+				E463C0EA24DE91780006CB90 /* PopoutView.swift in Sources */,
 				E459189124D002F100953D4A /* ProductsView.swift in Sources */,
 				E884790324D5514100187E05 /* PodcastPlayer.swift in Sources */,
 				E459187424CFF48100953D4A /* AppDelegate.swift in Sources */,

@@ -34,10 +34,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let gestureView = GestureView()
         
+        let master = Master()
+        
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: gestureView)
+            window.rootViewController = UIHostingController(rootView: master)
             self.window = window
             window.makeKeyAndVisible()
         }
