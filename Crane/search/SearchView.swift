@@ -8,42 +8,64 @@
 
 import SwiftUI
 
-
-struct RepoRow: View {
-    let repo: Repo
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text(repo.name).font(.headline)
-            Text(repo.description).font(.subheadline)
-        }
-    }
-}
-
 struct SearchView: View {
     
-    @State private var query: String = "Swift"
-    @EnvironmentObject var repoStore: ReposStore
+    @Binding var query: String
+    let repos:[Repo]
+    let onCommit: () -> Void
     
     var body: some View {
         
         NavigationView {
-            List{
-                TextField("Type something...", text: $query, onCommit: fetch)
-                ForEach(repoStore.repos){ repo in
-                    RepoRow(repo: repo)
+            List {
+                TextField("Type someting", text: $query, onCommit: onCommit)
+                ForEach(repos) { repo in
+                    HStack(alignment: .top) {
+                        VStack(alignment: .leading) {
+                            Text(repo.name).font(.headline)
+                            Text(repo.description).font(.subheadline)
+                        }
+                    }
                 }
-            }.navigationBarTitle(Text("Search"))
-        }.onAppear(perform: fetch)
+                NavigationLink(destination: RepertotyView()) {
+                    Text("repertoty")
+                }
+                
+                List(repos, id: \.self) { repo in
+                    NavigationLink(destination: RepertotyView()) {
+                        Text(repo.name)
+                    }
+                }
+            }.navigationBarTitle("Nav")
+        }
+        
     }
     
+}
+
+
+struct SearchContainerView: View {
+    @EnvironmentObject var repoStore: ReposStore
+    @State private var query: String = "Swift"
+    
+    var body: some View {
+        SearchView(query: $query, repos: repoStore.repos, onCommit: fetch)
+            .onAppear(perform: fetch)
+    }
     
     private func fetch() {
         repoStore.fetch(matching: query)
     }
 }
 
-struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchView()
+
+
+struct RepertotyView: View {
+    var body: some View {
+        List {
+            NavigationLink(destination: RepertotyView()) {
+                Text("gogogogogo")
+            }.navigationBarTitle("nav")
+        }
     }
 }
