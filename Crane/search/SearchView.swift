@@ -7,6 +7,21 @@
 //
 
 import SwiftUI
+import KingfisherSwiftUI
+
+struct SearchContainerView: View {
+    @EnvironmentObject var repoStore: ReposStore
+    @State private var query: String = "Swift"
+    
+    var body: some View {
+        SearchView(query: $query, repos: repoStore.repos, onCommit: fetch)
+            .onAppear(perform: fetch)
+    }
+    
+    private func fetch() {
+        repoStore.fetch(matching: query)
+    }
+}
 
 struct SearchView: View {
     
@@ -19,14 +34,9 @@ struct SearchView: View {
         NavigationView {
             List {
                 TextField("Type someting", text: $query, onCommit: onCommit)
-                ForEach(repos) { repo in
-                    HStack(alignment: .top) {
-                        VStack(alignment: .leading) {
-                            Text(repo.name).font(.headline)
-                            Text(repo.description).font(.subheadline)
-                        }
-                    }
-                }
+                
+                ForEach(repos, content: {RepoRow(repo: $0)})
+                
                 NavigationLink(destination: RepertotyView()) {
                     Text("repertoty")
                 }
@@ -43,21 +53,33 @@ struct SearchView: View {
     
 }
 
-
-struct SearchContainerView: View {
-    @EnvironmentObject var repoStore: ReposStore
-    @State private var query: String = "Swift"
-    
+struct RepoRow: View {
+    let repo: Repo
     var body: some View {
-        SearchView(query: $query, repos: repoStore.repos, onCommit: fetch)
-            .onAppear(perform: fetch)
-    }
-    
-    private func fetch() {
-        repoStore.fetch(matching: query)
+        HStack(alignment: .center) {
+            KFImage(URL(string: "https://example.com/image.png")!).placeholder({Image("def_image")})
+            Image("def_image").frame(width: 100, height: 100, alignment: .center).background(Color.red)
+            VStack(alignment: .leading) {
+                Text(repo.name).font(.headline)
+//                Text(repo.description )
+//                    .foregroundColor(.secondary)
+//                    .font(.subheadline)
+                ModifiedContent(
+                    content: Text(repo.description),
+                    modifier: SubheadlineModifier())
+            }
+        }
     }
 }
 
+
+struct SubheadlineModifier: ViewModifier {
+
+    func body(content: Content) -> some View {
+        content.foregroundColor(.secondary).font(.subheadline)
+    }
+    
+}
 
 
 struct RepertotyView: View {
