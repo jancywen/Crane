@@ -58,7 +58,11 @@ struct RepoRow: View {
     var body: some View {
         HStack(alignment: .center) {
             KFImage(URL(string: "https://example.com/image.png")!).placeholder({Image("def_image")})
-            Image("def_image").frame(width: 100, height: 100, alignment: .center).background(Color.red)
+            
+            Image(systemName: "photo")
+                .fetchingRemoteImage(from: URL(string: "https://t9.baidu.com/it/u=2268908537,2815455140&fm=79&app=86&size=h300&n=0&g=4n&f=jpeg?sec=1597894231&t=cf5f9ea61f04a848592b930df81a0194")!)
+                .frame(width: 44, height: 44)
+            
             VStack(alignment: .leading) {
                 Text(repo.name).font(.headline)
 //                Text(repo.description )
