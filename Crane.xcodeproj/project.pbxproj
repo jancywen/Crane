@@ -22,6 +22,11 @@
 		E463C0E724DE86610006CB90 /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463C0E624DE86610006CB90 /* Master.swift */; };
 		E463C0EA24DE91780006CB90 /* PopoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463C0E924DE91780006CB90 /* PopoutView.swift */; };
 		E4D4855424E4E66800336055 /* RemoteImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4855324E4E66800336055 /* RemoteImageModifier.swift */; };
+		E4D4855724E506CE00336055 /* ProgressShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4855624E506CE00336055 /* ProgressShape.swift */; };
+		E4D4855924E5081600336055 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4855824E5081600336055 /* ProgressView.swift */; };
+		E4D4855B24E5139800336055 /* ShapeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4855A24E5139800336055 /* ShapeContentView.swift */; };
+		E4D4855D24E52BF800336055 /* FivePointedStarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4855C24E52BF800336055 /* FivePointedStarShape.swift */; };
+		E4D4855F24E533CB00336055 /* BarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4855E24E533CB00336055 /* BarsView.swift */; };
 		E884790324D5514100187E05 /* PodcastPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790224D5514100187E05 /* PodcastPlayer.swift */; };
 		E884790524D551C800187E05 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790424D551C800187E05 /* EpisodesView.swift */; };
 		E884790824D557AD00187E05 /* SettingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790724D557AD00187E05 /* SettingStore.swift */; };
@@ -62,6 +67,11 @@
 		E463C0E624DE86610006CB90 /* Master.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
 		E463C0E924DE91780006CB90 /* PopoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoutView.swift; sourceTree = "<group>"; };
 		E4D4855324E4E66800336055 /* RemoteImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageModifier.swift; sourceTree = "<group>"; };
+		E4D4855624E506CE00336055 /* ProgressShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressShape.swift; sourceTree = "<group>"; };
+		E4D4855824E5081600336055 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		E4D4855A24E5139800336055 /* ShapeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeContentView.swift; sourceTree = "<group>"; };
+		E4D4855C24E52BF800336055 /* FivePointedStarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FivePointedStarShape.swift; sourceTree = "<group>"; };
+		E4D4855E24E533CB00336055 /* BarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsView.swift; sourceTree = "<group>"; };
 		E884790224D5514100187E05 /* PodcastPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPlayer.swift; sourceTree = "<group>"; };
 		E884790424D551C800187E05 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		E884790724D557AD00187E05 /* SettingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStore.swift; sourceTree = "<group>"; };
@@ -111,6 +121,7 @@
 		E459187224CFF48100953D4A /* Crane */ = {
 			isa = PBXGroup;
 			children = (
+				E4D4855524E5064400336055 /* Shape */,
 				E4D4855224E4E62100336055 /* CustomModifier */,
 				E463C0E824DE91680006CB90 /* Popout */,
 				E884791224D66CAA00187E05 /* Gesture */,
@@ -162,6 +173,18 @@
 				E4D4855324E4E66800336055 /* RemoteImageModifier.swift */,
 			);
 			path = CustomModifier;
+			sourceTree = "<group>";
+		};
+		E4D4855524E5064400336055 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				E4D4855624E506CE00336055 /* ProgressShape.swift */,
+				E4D4855824E5081600336055 /* ProgressView.swift */,
+				E4D4855A24E5139800336055 /* ShapeContentView.swift */,
+				E4D4855C24E52BF800336055 /* FivePointedStarShape.swift */,
+				E4D4855E24E533CB00336055 /* BarsView.swift */,
+			);
+			path = Shape;
 			sourceTree = "<group>";
 		};
 		E884790124D550E100187E05 /* Property Wrapper */ = {
@@ -286,17 +309,22 @@
 				E463C0E724DE86610006CB90 /* Master.swift in Sources */,
 				E884791124D65FB000187E05 /* EditingView.swift in Sources */,
 				E463C0EA24DE91780006CB90 /* PopoutView.swift in Sources */,
+				E4D4855D24E52BF800336055 /* FivePointedStarShape.swift in Sources */,
 				E459189124D002F100953D4A /* ProductsView.swift in Sources */,
 				E884790324D5514100187E05 /* PodcastPlayer.swift in Sources */,
 				E459187424CFF48100953D4A /* AppDelegate.swift in Sources */,
 				E459188B24CFF59500953D4A /* ReposStore.swift in Sources */,
+				E4D4855F24E533CB00336055 /* BarsView.swift in Sources */,
 				E459187624CFF48100953D4A /* SceneDelegate.swift in Sources */,
 				E884790824D557AD00187E05 /* SettingStore.swift in Sources */,
 				E459188D24CFF60300953D4A /* GithubService.swift in Sources */,
 				E459188F24CFF8F300953D4A /* SearchView.swift in Sources */,
 				E459187824CFF48100953D4A /* ContentView.swift in Sources */,
+				E4D4855724E506CE00336055 /* ProgressShape.swift in Sources */,
+				E4D4855924E5081600336055 /* ProgressView.swift in Sources */,
 				E884790A24D55C9B00187E05 /* SettingView.swift in Sources */,
 				E884791424D66CB600187E05 /* GestureView.swift in Sources */,
+				E4D4855B24E5139800336055 /* ShapeContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

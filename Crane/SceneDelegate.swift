@@ -36,10 +36,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let master = Master()
         
+        let progress = ShapeContentView()
+        
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: searchView)
+            window.rootViewController = UIHostingController(rootView: progress)
             self.window = window
             window.makeKeyAndVisible()
         }
