@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4375CE62542DDBE00CEED14 /* CalendarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4375CE52542DDBE00CEED14 /* CalendarContainerView.swift */; };
 		E45840E824E4038B0057A9C4 /* KingfisherSwiftUIDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E45840E724E4038B0057A9C4 /* KingfisherSwiftUIDynamic */; };
 		E45840E924E4038B0057A9C4 /* KingfisherSwiftUIDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E45840E724E4038B0057A9C4 /* KingfisherSwiftUIDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E459187424CFF48100953D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459187324CFF48100953D4A /* AppDelegate.swift */; };
@@ -27,6 +28,9 @@
 		E4D4855B24E5139800336055 /* ShapeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4855A24E5139800336055 /* ShapeContentView.swift */; };
 		E4D4855D24E52BF800336055 /* FivePointedStarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4855C24E52BF800336055 /* FivePointedStarShape.swift */; };
 		E4D4855F24E533CB00336055 /* BarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4855E24E533CB00336055 /* BarsView.swift */; };
+		E4F6B77624EA72B00051FF0D /* TodosStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6B77524EA72B00051FF0D /* TodosStore.swift */; };
+		E4F6B77824EA72C80051FF0D /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6B77724EA72C80051FF0D /* TodosView.swift */; };
+		E4F6B77A24EA77110051FF0D /* RandomAccessCollection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6B77924EA77110051FF0D /* RandomAccessCollection+Extension.swift */; };
 		E884790324D5514100187E05 /* PodcastPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790224D5514100187E05 /* PodcastPlayer.swift */; };
 		E884790524D551C800187E05 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790424D551C800187E05 /* EpisodesView.swift */; };
 		E884790824D557AD00187E05 /* SettingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884790724D557AD00187E05 /* SettingStore.swift */; };
@@ -52,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E4375CE52542DDBE00CEED14 /* CalendarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarContainerView.swift; sourceTree = "<group>"; };
 		E459187024CFF48100953D4A /* Crane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E459187324CFF48100953D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E459187524CFF48100953D4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +77,9 @@
 		E4D4855A24E5139800336055 /* ShapeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeContentView.swift; sourceTree = "<group>"; };
 		E4D4855C24E52BF800336055 /* FivePointedStarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FivePointedStarShape.swift; sourceTree = "<group>"; };
 		E4D4855E24E533CB00336055 /* BarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsView.swift; sourceTree = "<group>"; };
+		E4F6B77524EA72B00051FF0D /* TodosStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosStore.swift; sourceTree = "<group>"; };
+		E4F6B77724EA72C80051FF0D /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
+		E4F6B77924EA77110051FF0D /* RandomAccessCollection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+Extension.swift"; sourceTree = "<group>"; };
 		E884790224D5514100187E05 /* PodcastPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPlayer.swift; sourceTree = "<group>"; };
 		E884790424D551C800187E05 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		E884790724D557AD00187E05 /* SettingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStore.swift; sourceTree = "<group>"; };
@@ -121,6 +129,7 @@
 		E459187224CFF48100953D4A /* Crane */ = {
 			isa = PBXGroup;
 			children = (
+				E4F6B77224EA718B0051FF0D /* Todo */,
 				E4D4855524E5064400336055 /* Shape */,
 				E4D4855224E4E62100336055 /* CustomModifier */,
 				E463C0E824DE91680006CB90 /* Popout */,
@@ -187,12 +196,23 @@
 			path = Shape;
 			sourceTree = "<group>";
 		};
+		E4F6B77224EA718B0051FF0D /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				E4F6B77524EA72B00051FF0D /* TodosStore.swift */,
+				E4F6B77724EA72C80051FF0D /* TodosView.swift */,
+				E4F6B77924EA77110051FF0D /* RandomAccessCollection+Extension.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
 		E884790124D550E100187E05 /* Property Wrapper */ = {
 			isa = PBXGroup;
 			children = (
 				E459189024D002F100953D4A /* ProductsView.swift */,
 				E884790224D5514100187E05 /* PodcastPlayer.swift */,
 				E884790424D551C800187E05 /* EpisodesView.swift */,
+				E4375CE52542DDBE00CEED14 /* CalendarContainerView.swift */,
 			);
 			path = "Property Wrapper";
 			sourceTree = "<group>";
@@ -308,6 +328,8 @@
 				E884790F24D65E5200187E05 /* PersonsView.swift in Sources */,
 				E463C0E724DE86610006CB90 /* Master.swift in Sources */,
 				E884791124D65FB000187E05 /* EditingView.swift in Sources */,
+				E4375CE62542DDBE00CEED14 /* CalendarContainerView.swift in Sources */,
+				E4F6B77624EA72B00051FF0D /* TodosStore.swift in Sources */,
 				E463C0EA24DE91780006CB90 /* PopoutView.swift in Sources */,
 				E4D4855D24E52BF800336055 /* FivePointedStarShape.swift in Sources */,
 				E459189124D002F100953D4A /* ProductsView.swift in Sources */,
@@ -319,8 +341,10 @@
 				E884790824D557AD00187E05 /* SettingStore.swift in Sources */,
 				E459188D24CFF60300953D4A /* GithubService.swift in Sources */,
 				E459188F24CFF8F300953D4A /* SearchView.swift in Sources */,
+				E4F6B77A24EA77110051FF0D /* RandomAccessCollection+Extension.swift in Sources */,
 				E459187824CFF48100953D4A /* ContentView.swift in Sources */,
 				E4D4855724E506CE00336055 /* ProgressShape.swift in Sources */,
+				E4F6B77824EA72C80051FF0D /* TodosView.swift in Sources */,
 				E4D4855924E5081600336055 /* ProgressView.swift in Sources */,
 				E884790A24D55C9B00187E05 /* SettingView.swift in Sources */,
 				E884791424D66CB600187E05 /* GestureView.swift in Sources */,
@@ -462,16 +486,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Crane/Preview Content\"";
+				DEVELOPMENT_TEAM = BC7U46938F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Crane/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jancy.Crane;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jancy.Crane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -481,16 +507,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Crane/Preview Content\"";
+				DEVELOPMENT_TEAM = BC7U46938F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Crane/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jancy.Crane;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jancy.Crane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

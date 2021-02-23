@@ -8,11 +8,11 @@
 
 
 import Foundation
-extension RandomAccessCollection {
-    func indexed() -> Array<(offset: Int, element: Element)> {
-        Array(enumerated())
-    }
-}
+//extension RandomAccessCollection {
+//    func indexed() -> Array<(offset: Int, element: Element)> {
+//        Array(enumerated())
+//    }
+//}
 
 
 import SwiftUI
